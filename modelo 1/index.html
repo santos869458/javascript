@@ -6,7 +6,7 @@
     <title>Saudações Animadas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body onload="carregar()"> <!--assim que carregar o site, ele carrega a função-->
     <header>
         <h1>Verificador de Idade</h1>
     </header>
@@ -14,24 +14,24 @@
     <section>
         <div>
             <p>Ano de Nascimento:</p>
-            <input type="number" name="txtano" id="txtano" min="0">
-        <p>sexo:
-            <input type="radio" name="radsex" id="masc" checked>
-            <label for="mas">masculino</label>
-            <input type="radio" name="radsex" id="fem">
-            <label for="fem">Feminino</label>
-        </p>
-        <p>
-             <input type="button" value="Verificar" onclick="verificar()">
-        </p>
+                <input type="number" name="txtano" id="txtano" min="1900"><!--min é valor mininmo no imput-->
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked><!--radio cria a bolinha / checked seleciona a bolinha-->
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex"  id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
 
         <div id="res">
             Preencha os dados acima para ver o resultado!
         </div>
     </section>
- 
-    <footer id="texto">
+
+    <footer>
        <p>&copy VS Code Corporation</p>
     </footer>
 
