@@ -1,9 +1,7 @@
-//console.log('Tem fatia?')
-//console.log('Tem fatia?')
-
+//------faça enquanto-----------
 
 var c = 1
-do (c <= 8){
+do {
     console.log(`Passo ${c}`)
-    c++ // c = + 1
+    c++ // c = 1 + 1
 }while (c <= 8)
